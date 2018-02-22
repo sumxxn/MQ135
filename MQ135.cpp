@@ -28,7 +28,6 @@ MQ135::MQ135(uint8_t pin) {
   _pin = pin;
 }
 
-
 /**************************************************************************/
 /*!
 @brief  Get the correction factor to correct for temperature and humidity
