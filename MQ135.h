@@ -22,24 +22,24 @@ v1.0 - First release
 #endif
 
 /// The load resistance on the board
-float RLOAD = 10.0;
+#define RLOAD 10.0
 /// Calibration resistance at atmospheric CO2 level
-float RZERO = 76.63;
+#define RZERO 76.63
 /// Parameters for calculating ppm of CO2 from sensor resistance
-float PARA = 116.6020682;
-float PARB = 2.769034857;
+#define PARA 116.6020682
+#define PARB 2.769034857
 
 /// Parameters to model temperature and humidity dependence
-float CORA = .00035;
-float CORB = .02718;
-float CORC = 1.39538;
-float CORD = .0018;
-float CORE = -.003333333;
-float CORF = -.001923077;
-float CORG = 1.130128205;
+#define CORA .00035
+#define CORB .02718
+#define CORC 1.39538
+#define CORD .0018
+#define CORE -.003333333
+#define CORF -.001923077
+#define CORG 1.130128205
 
 /// Atmospheric CO2 level for calibration purposes
-float ATMOCO2 = 406.88;
+#define ATMOCO2 406.88
 
 class MQ135 {
  private:
