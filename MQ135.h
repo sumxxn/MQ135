@@ -41,7 +41,7 @@ v1.0 - First release
 class MQ135 {
  private:
   uint8_t _pin;
-  float _rload; // The load resistance on the board
+  float _rload; // The load resistance on the board in kOhm
   float _rzero; // Calibration resistance at atmospheric CO2 level
 
  public:

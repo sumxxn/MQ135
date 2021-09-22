@@ -22,7 +22,7 @@ v1.0 - First release
 
 @param[in] pin		The analog input pin for the readout of the sensor
 @param[in] rzero	Calibration resistance at atmospheric CO2 level
-@param[in] rload	The load resistance on the board
+@param[in] rload	The load resistance on the board in kOhm
 */
 /**************************************************************************/
 
