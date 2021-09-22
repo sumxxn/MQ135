@@ -57,6 +57,8 @@ float MQ135::getCorrectionFactor(float t, float h) {
 /**************************************************************************/
 /*!
 @brief  Get the resistance of the sensor, ie. the measurement value
+		Known issue: If the ADC resolution is not 10-bits, this will give
+		back garbage values!
 
 @return The sensor resistance in kOhm
 */
