@@ -1,13 +1,13 @@
-#include "MQ135.h"
-#include "DHT.h"
+#include <MQ135.h>
+#include <DHT.h>
 
 /* MQ135 + DHT Temp Sensor
- * 
- * Combination of the MQ135 air quality sensor and a DHT11/22 temperature sensor to accurately measure ppm values through the library correction.
- * Uses the Adafruit DHT Sensor Library: https://github.com/adafruit/DHT-sensor-library
- * 
- * Written by: https://github.com/Phoenix1747/MQ135
- */
+
+   Combination of the MQ135 air quality sensor and a DHT11/22 temperature sensor to accurately measure ppm values through the library correction.
+   Uses the Adafruit DHT Sensor Library: https://github.com/adafruit/DHT-sensor-library
+
+   Written by: https://github.com/Phoenix1747/MQ135
+*/
 
 #define PIN_MQ135 A2 // MQ135 Analog Input Pin
 #define DHTPIN 2 // DHT Digital Input Pin
@@ -20,7 +20,7 @@ float temperature, humidity; // Temp and Humid floats, will be measured by the D
 
 void setup() {
   Serial.begin(9600);
-  
+
   dht.begin();
 }
 
@@ -33,7 +33,7 @@ void loop() {
     Serial.println(F("Failed to read from DHT sensor!"));
     return;
   }
-  
+
   float rzero = mq135_sensor.getRZero();
   float correctedRZero = mq135_sensor.getCorrectedRZero(temperature, humidity);
   float resistance = mq135_sensor.getResistance();
