@@ -4,6 +4,8 @@
 
 Updated and improved Arduino library for the MQ135 gas/air quality sensor.
 
+This library is also available in the Arduino IDE, see [Arduino Library List](https://www.arduinolibraries.info/libraries/mq135).
+
 ## Datasheet
 
 Can be found [here](https://www.olimex.com/Products/Components/Sensors/SNS-MQ135/resources/SNS-MQ135.pdf).
