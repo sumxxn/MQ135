@@ -1,6 +1,6 @@
 # MQ135 GAS SENSOR
 
-![latest version](https://img.shields.io/github/release/Phoenix1747/MQ135.svg?style=for-the-badge) ![issues](https://img.shields.io/github/issues/Phoenix1747/MQ135.svg?style=for-the-badge) ![open pr](https://img.shields.io/github/issues-pr-raw/phoenix1747/MQ135.svg?style=for-the-badge)
+![arduino-library-badge](https://www.ardu-badge.com/badge/MQ135.svg?) ![latest version](https://img.shields.io/github/release/Phoenix1747/MQ135.svg?) ![issues](https://img.shields.io/github/issues/Phoenix1747/MQ135.svg?) ![open pr](https://img.shields.io/github/issues-pr-raw/phoenix1747/MQ135.svg?)
 
 Updated and improved Arduino library for the MQ135 gas/air quality sensor.
 
