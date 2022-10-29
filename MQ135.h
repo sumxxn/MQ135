@@ -22,6 +22,10 @@ v1.0 - First release
  #include "WProgram.h"
 #endif
 
+/// For details about the parameters below, see:
+/// http://davidegironi.blogspot.com/2014/01/cheap-co2-meter-using-mq135-sensor-with.html
+/// https://hackaday.io/project/3475-sniffing-trinket/log/12363-mq135-arduino-library
+
 /// Parameters for calculating ppm of CO2 from sensor resistance
 #define PARA 116.6020682
 #define PARB 2.769034857
@@ -35,8 +39,10 @@ v1.0 - First release
 #define CORF -.001923077
 #define CORG 1.130128205
 
-/// Atmospheric CO2 level for calibration purposes
-#define ATMOCO2 414.47 //Global CO2 Aug 2021
+/// Atmospheric CO2 level for calibration purposes,
+/// from "Globally averaged marine surface annual mean data"
+/// available at https://gml.noaa.gov/ccgg/trends/gl_data.html
+#define ATMOCO2 415.95 // Global CO2 Set 2022
 
 class MQ135 {
  private:
